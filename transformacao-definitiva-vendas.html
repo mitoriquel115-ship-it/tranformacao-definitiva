@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformação Definitiva - Emagreça em 21 Dias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #1a7e4d 0%, #2fa573 100%);
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .btn-header {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .btn-header:hover {
+            background: #ff5520;
+            transform: scale(1.05);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            padding: 40px 20px 60px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #1a7e4d;
+            margin-bottom: 15px;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .hero h3 {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8558 100%);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 18px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            transition: all 0.3s;
+            margin: 20px 0;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);
+        }
+
+        /* SEÇÃO PROBLEMA */
+        .section-problem {
+            background: white;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: #1a7e4d;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 800;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .problem-item {
+            background: #fff5f5;
+            border-left: 4px solid #ff6b35;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .problem-item p {
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* SEÇÃO SOLUÇÃO */
+        .section-solution {
+            background: linear-gradient(135deg, #1a7e4d 0%, #0f5535 100%);
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .solution-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .solution-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .solution-content > p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .includes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .include-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .include-item p {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        /* SEÇÃO 5 PILARES */
+        .section-pillars {
+            background: white;
+            padding: 50px 20px;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pillar-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .pillar-card:hover {
+            border-color: #1a7e4d;
+            box-shadow: 0 5px 20px rgba(26, 126, 77, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .pillar-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .pillar-card h3 {
+            color: #1a7e4d;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .pillar-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* SEÇÃO RESULTADOS */
+        .section-results {
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            padding: 50px 20px;
+        }
+
+        .results-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #1a7e4d;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: #1a7e4d;
+            font-size: 13px;
+        }
+
+        .stars {
+            color: #ffd700;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        /* SEÇÃO O QUE VOCÊ VAI RECEBER */
+        .section-includes {
+            background: white;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .includes-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .include-list-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .include-list-item span:first-child {
+            font-size: 20px;
+        }
+
+        /* SEÇÃO APP BONUS */
+        .section-bonus {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8558 100%);
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .bonus-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .bonus-text h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .bonus-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .bonus-features li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 15px;
+        }
+
+        .bonus-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .bonus-image {
+            text-align: center;
+        }
+
+        .bonus-image p {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        /* SEÇÃO FAQ */
+        .section-faq {
+            background: white;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f5f5f5;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: 700;
+            color: #1a7e4d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #efefef;
+        }
+
+        .faq-question.active {
+            background: #1a7e4d;
+            color: white;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            display: none;
+            background: white;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        .faq-toggle {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+
+        .faq-question.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        /* SEÇÃO GARANTIA */
+        .section-guarantee {
+            background: linear-gradient(135deg, #fff8e1 0%, #fff5cc 100%);
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 12px;
+            border-left: 5px solid #ff6b35;
+            margin-top: -30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .guarantee-content {
+            text-align: center;
+        }
+
+        .guarantee-content h3 {
+            color: #1a7e4d;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .guarantee-content p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* SEÇÃO URGÊNCIA */
+        .section-urgency {
+            background: white;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .urgency-box {
+            background: #fff5f5;
+            border: 2px solid #ff6b35;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .urgency-box h3 {
+            color: #ff6b35;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .urgency-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .urgency-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ffcccc;
+        }
+
+        .urgency-item strong {
+            color: #ff6b35;
+            font-size: 16px;
+        }
+
+        /* SEÇÃO FINAL CTA */
+        .section-final {
+            background: linear-gradient(135deg, #1a7e4d 0%, #0f5535 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .final-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .final-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .final-content h3 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: 400;
+            opacity: 0.95;
+        }
+
+        .btn-final {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8558 100%);
+            color: white;
+            border: none;
+            padding: 20px 60px;
+            font-size: 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+            transition: all 0.3s;
+            margin: 20px 0;
+        }
+
+        .btn-final:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(255, 107, 53, 0.6);
+        }
+
+        .final-text {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 20px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            .hero h3 {
+                font-size: 16px;
+            }
+
+            .btn-primary {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 22px;
+            }
+
+            .bonus-content {
+                grid-template-columns: 1fr;
+            }
+
+            .urgency-info {
+                grid-template-columns: 1fr;
+            }
+
+            .final-content h2 {
+                font-size: 24px;
+            }
+
+            .btn-final {
+                padding: 15px 40px;
+                font-size: 16px;
+            }
+        }
+
+        /* ANIMAÇÕES */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: slideIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="top">
+        <h1>🔥 TRANSFORMAÇÃO DEFINITIVA</h1>
+        <button class="btn-header" onclick="scrollToFormato()">EMAGREÇA AGORA</button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>⏰ VOCÊ TEM 21 DIAS PARA MUDAR SUA VIDA PARA SEMPRE</h2>
+        <h3>Descubra o método que já transformou mais de 10 mil pessoas em apenas 3 semanas — sem sofrer, sem morrer de fome, comendo gostoso</h3>
+        <button class="btn-primary" onclick="scrollToFormato()">COMECE MINHA TRANSFORMAÇÃO</button>
+    </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="section-problem">
+    <h2 class="section-title">POR QUE VOCÊ NÃO CONSEGUE EMAGRECER?</h2>
+    <div class="problems-grid">
+        <div class="problem-item">
+            <p>❌ Dietas restritivas que deixam você de mau humor</p>
+        </div>
+        <div class="problem-item">
+            <p>❌ Fome constante durante o dia todo</p>
+        </div>
+        <div class="problem-item">
+            <p>❌ Falta de energia para trabalhar e viver</p>
+        </div>
+        <div class="problem-item">
+            <p>❌ Metabolismo lento e travado</p>
+        </div>
+        <div class="problem-item">
+            <p>❌ Falta de um método que realmente funcione</p>
+        </div>
+        <div class="problem-item">
+            <p>❌ Ver resultados nos outros mas não em você</p>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <h3 style="color: #ff6b35; font-size: 20px; margin-top: 30px;">Existe uma saída e ela é mais simples do que você pensa</h3>
+    </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section class="section-solution">
+    <div class="solution-content">
+        <h2>✨ APRESENTAMOS: O MÉTODO QUE FUNCIONA EM 21 DIAS</h2>
+        <p>Científico, Comprovado, Testado com Milhares de Pessoas</p>
+        <div class="includes-grid">
+            <div class="include-item">
+                <p>📚 8 Capítulos Estratégicos</p>
+            </div>
+            <div class="include-item">
+                <p>🍽️ Cardápio de 21 Dias Pronto</p>
+            </div>
+            <div class="include-item">
+                <p>💪 3 Opções de Treino</p>
+            </div>
+            <div class="include-item">
+                <p>🧠 Psicologia do Emagrecimento</p>
+            </div>
+            <div class="include-item">
+                <p>🍽️ Receitas Deliciosas</p>
+            </div>
+            <div class="include-item">
+                <p>✅ Nunca Mais Engordar</p>
+            </div>
+        </div>
+        <button class="btn-primary" onclick="scrollToFormato()" style="background: #ff6b35;">ACESSE AGORA</button>
+    </div>
+</section>
+
+<!-- 5 PILARES -->
+<section class="section-pillars">
+    <h2 class="section-title">OS 5 PILARES QUE TRANSFORMAM O CORPO</h2>
+    <div class="pillars-grid">
+        <div class="pillar-card">
+            <div class="pillar-icon">🍎</div>
+            <h3>Nutrição Inteligente</h3>
+            <p>Coma gostoso e emagreça. Sem contar caloria. Sem privação.</p>
+        </div>
+        <div class="pillar-card">
+            <div class="pillar-icon">💪</div>
+            <h3>Movimento Estratégico</h3>
+            <p>Treinos de 15 minutos que queimam mais gordura</p>
+        </div>
+        <div class="pillar-card">
+            <div class="pillar-icon">💧</div>
+            <h3>Hidratação & Detox</h3>
+            <p>Desbloqueie seu metabolismo completamente</p>
+        </div>
+        <div class="pillar-card">
+            <div class="pillar-icon">😴</div>
+            <h3>Qualidade de Sono</h3>
+            <p>Quem dorme bem emagrece mais. Aprenda o segredo.</p>
+        </div>
+        <div class="pillar-card">
+            <div class="pillar-icon">🧠</div>
+            <h3>Mentalidade</h3>
+            <p>Reprograme seu cérebro para nunca mais desejar junk food</p>
+        </div>
+    </div>
+</section>
+
+<!-- RESULTADOS -->
+<section class="section-results">
+    <div class="results-container">
+        <h2 class="section-title">VEJA O QUE AS PESSOAS ESTÃO CONSEGUINDO</h2>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <div class="stars">⭐⭐⭐⭐⭐ 4.9 de 5 estrelas com 3.847 avaliações</div>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Perdi 12kg em 21 dias e agora estou com 25kg perdidos!"</p>
+                <div class="testimonial-author">Maria M., 32 anos</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Nunca pensei que fosse possível comer gostoso e emagrecer"</p>
+                <div class="testimonial-author">João P., 45 anos</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Minha vida mudou. Agora tenho energia para tudo"</p>
+                <div class="testimonial-author">Juliana T., 28 anos</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Finalmente descobri o que realmente funciona"</p>
+                <div class="testimonial-author">Carlos S., 38 anos</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- O QUE VOCÊ VAI RECEBER -->
+<section class="section-includes">
+    <h2 class="section-title">TUDO QUE VOCÊ VAI GANHAR HOJE</h2>
+    <div class="includes-list">
+        <div class="include-list-item">
+            <span>✅</span>
+            <div><strong>Ebook Digital Completo</strong><br>8 capítulos estratégicos</div>
+        </div>
+        <div class="include-list-item">
+            <span>✅</span>
+            <div><strong>Cardápio de 21 Dias</strong><br>Pronto para copiar e colar</div>
+        </div>
+        <div class="include-list-item">
+            <span>✅</span>
+            <div><strong>15 Receitas Exclusivas</strong><br>Deliciosas e fáceis</div>
+        </div>
+        <div class="include-list-item">
+            <span>✅</span>
+            <div><strong>3 Programas de Treino</strong><br>15, 30 e 60 minutos</div>
+        </div>
+        <div class="include-list-item">
+            <span>✅</span>
+            <div><strong>Guia Psicologia</strong><br>Reprograme seu cérebro</div>
+        </div>
+        <div class="include-list-item">
+            <span>✅</span>
+            <div><strong>Lista de Compras</strong><br>Organizada e pronta</div>
+        </div>
+    </div>
+</section>
+
+<!-- BÔNUS APP -->
+<section class="section-bonus">
+    <div class="bonus-content">
+        <div class="bonus-text">
+            <h2>🎁 BÔNUS EXCLUSIVO<br>App Premium com 7 Dias Grátis</h2>
+            <p>Quando você comprar o ebook, você ganha acesso IMEDIATO ao nosso aplicativo premium:</p>
+            <ul class="bonus-features">
+                <li>🔥 Treinos personalizados diários</li>
+                <li>🔥 Cardápios automáticos</li>
+                <li>🔥 Contador de calorias inteligente</li>
+                <li>🔥 Comunidade de transformação</li>
+                <li>🔥 Lembretes motivacionais</li>
+                <li>🔥 Suporte com especialistas</li>
+                <li>🔥 Acompanhamento em tempo real</li>
+            </ul>
+            <p style="margin-top: 20px; font-size: 13px; opacity: 0.9;">Após os 7 dias grátis, você pode continuar pagando uma taxa mínima mensal (totalmente opcional).</p>
+        </div>
+        <div class="bonus-image">
+            <div style="background: white; width: 150px; height: 300px; margin: 0 auto; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #1a7e4d; font-weight: 700;">
+                📱 APP MOBILE<br><br>Premium
+            </div>
+            <p>Disponível para iOS e Android</p>
+        </div>
+    </div>
+</section>
+
+<!-- GARANTIA -->
+<section style="margin-top: 30px;">
+    <div class="section-guarantee">
+        <div class="guarantee-content">
+            <h3>✅ 100% DE GARANTIA DE SATISFAÇÃO</h3>
+            <p>Se em 21 dias você não ver resultados, devolvemos 100% do seu dinheiro. Sem perguntas. Sem chatices. Acreditamos tanto no método que oferecemos essa garantia.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-faq">
+    <h2 class="section-title">DÚVIDAS FREQUENTES</h2>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Quanto peso vou perder?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            A maioria das pessoas perde entre 8-12kg em 21 dias. Alguns perdem mais. Tudo depende do ponto de partida, mas os resultados são garantidos se você seguir o método.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Preciso malhar intenso?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            Não! Temos 3 opções de treino: 15, 30 e 60 minutos. Você escolhe o que funciona melhor para você. Pode fazer em casa, sem equipamento.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+            <span>E se eu sair do plano?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            Temos um capítulo inteiro sobre como lidar com deslizes e como continuar o progresso sem culpa. Você está aprendendo um novo estilo de vida, não uma dieta.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Funciona mesmo?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            Sim! Mais de 10 mil pessoas já usaram e tiveram resultados. Todos que seguiram rigorosamente conseguiram. Veja os depoimentos acima como prova.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Preciso de equipamento?</span>
+            <span class="faq-toggle">▼</span>
+        </div>
+        <div class="faq-answer">
+            Não! Todos os treinos estão adaptados para iniciantes e avançados, sem necessidade de equipamento. Você faz em casa, em sua sala.
+        </div>
+    </div>
+</section>
+
+<!-- URGÊNCIA -->
+<section class="section-urgency">
+    <h2 class="section-title">⚠️ ESTA OFERTA NÃO VAI DURAR PARA SEMPRE</h2>
+    <div class="urgency-box">
+        <h3>Estamos oferecendo um preço especial por tempo limitado</h3>
+        <div class="urgency-info">
+            <div class="urgency-item">
+                <strong>⏳ Oferta Válida</strong><br>Tempo Limitado
+            </div>
+            <div class="urgency-item">
+                <strong>📍 Apenas Alguns</strong><br>Com Acesso Especial
+            </div>
+        </div>
+        <p style="color: #333; margin: 20px 0;">Depois a oferta volta ao preço normal. Não deixe essa oportunidade passar.</p>
+    </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section-final">
+    <div class="final-content">
+        <h2>COMECE AGORA SUA TRANSFORMAÇÃO</h2>
+        <h3>Seus 21 dias começam HOJE. Seu corpo do futuro está agradecido.</h3>
+        <button class="btn-final" id="formato">SIM, QUERO EMAGRECER EM 21 DIAS</button>
+        <div class="final-text">
+            Você vai receber acesso imediato ao ebook + 7 dias grátis do app<br>
+            Com GARANTIA 100% de satisfação
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p style="margin-bottom: 15px;">Transformação Definitiva ❤️ - Todos os direitos reservados</p>
+    <p>
+        <a href="#">Política de Privacidade</a> | 
+        <a href="#">Termos de Serviço</a> | 
+        <a href="#">Contato</a>
+    </p>
+    <p style="margin-top: 15px; opacity: 0.7;">Aviso: Este produto não substitui atendimento médico profissional. Consulte um médico antes de iniciar qualquer programa de emagrecimento.</p>
+</footer>
+
+<script>
+    function scrollToFormato() {
+        document.getElementById('formato').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function toggleFaq(element) {
+        const question = element;
+        const answer = element.nextElementSibling;
+        
+        document.querySelectorAll('.faq-answer').forEach(a => {
+            a.classList.remove('show');
+        });
+        
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.classList.remove('active');
+        });
+        
+        question.classList.add('active');
+        answer.classList.add('show');
+    }
+
+    // Abrir primeiro FAQ por padrão
+    window.addEventListener('load', function() {
+        document.querySelector('.faq-question').classList.add('active');
+        document.querySelector('.faq-answer').classList.add('show');
+    });
+</script>
+
+</body>
+</html>
